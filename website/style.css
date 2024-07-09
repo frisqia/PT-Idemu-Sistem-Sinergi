@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s linear;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5px;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #fffffffe;
+}
+
+header {
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 160px;
+}
+
+.header-1, .header-2 {
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+    gap: 15px;
+}
+
+.header-1 li, .header-2 li {
+    margin: 5px;
+}
+
+
+main .banner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    list-style: none;
+    margin-left: 140px;
+    margin-right: 140px;
+    text-align: center;
+}
+
+main .logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .logo img{
+    padding-bottom: 20px;
+    margin-right: 10px;
+
+}
+
+main .banner .search button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+main .banner li button:hover {
+    background-color: darkorange;
+}
+
+menu{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.menu {
+    background-color: rgb(60, 84, 246);
+    padding: 10px 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.menu li a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: darkblue;
+}
+
+
+aside {
+    background-image: url(componen/background.jpg);
+    background-size: cover;
+    color: white;
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.titles{
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+
+.aside-container {
+    background-color: rgba(255, 251, 251, 0.888);
+    height: 20vh;
+    max-width: 600px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside-container .content{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    cursor: pointer;
+}
+
+.step, .serial{
+    width: 100%;
+    height: 100%;
+}
+
+.step:hover , .serial:hover{
+    background-color: blue;
+    background-size: 100%;
+    color: white;
+}
+
+.select{
+    margin: 5px;
+    display: flex;
+    size:  10px;
+    align-items: center;
+}
+
+.aside-container li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.aside-container select, .aside-container button {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.aside-container button {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.aside-container button:hover {
+    background-color: darkorange;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+
+
+}
+.catalog-wrapper {
+    position: relative;
+    display: flex;
+    width: 80%;
+    margin: 30px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.catalog .catalogs{
+    background: rgb(248, 243, 243);
+    text-align: start;
+    margin-right: 10px;
+    box-shadow: 3px 2px 3px solid gray;
+    /* width: calc(33.33% - 10px); */
+}
+
+
+.catalog div {
+    flex: none;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.catalog .name-product{
+    text-align: start;
+    padding-bottom: 10px;
+    margin: 10px;
+    
+}
+
+.catalog img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+}
+.catalog .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.catalog .cart {
+    background-color: orange;
+    color: rgb(245, 230, 230);
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.catalog .cart:hover {
+    background-color: darkorange;
+}
+.catalog .icon {
+    color: grey;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 50px;
+    margin-top: 150px;
+}
+.catalog .icon:hover{
+    background-color: none;
+    color: darkorange;
+}
+
+
