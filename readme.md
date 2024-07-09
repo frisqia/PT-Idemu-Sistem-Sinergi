@@ -7,6 +7,9 @@ CREATE TABLE students (
     Jurusan VARCHAR(255) NOT NULL,
 	Umur INT  NOT NULL
 );
+
+-------------------
+
 INSERT INTO students (NIM, Nama, Alamat, Jurusan, Umur)VALUES (123456, 'John', 'Jl.Merdeka No.1', 'Teknik Informatika', 21);
 INSERT INTO students (NIM, Nama, Alamat, Jurusan, Umur)VALUES (234567, 'Alice', 'Jl.Gatot Subroto', 'Sistem Informasi', 23);
 INSERT INTO students (NIM, Nama, Alamat, Jurusan, Umur)VALUES (345678, 'Bob', 'Jl.Sudirman No. 5', 'Teknik Informatika', 20);
@@ -25,6 +28,8 @@ CREATE TABLE subject (
     Dosen_pengajar VARCHAR(255) NOT NULL,
     FOREIGN KEY (NIM) REFERENCES students(NIM) ON DELETE CASCADE
 );
+
+---------------------------
 INSERT INTO subject (ID, Subject, NIM, Nilai, Dosen_pengajar)VALUES (1, 'Pemrograman Web', 123456, 85, 'Pak Budi');
 INSERT INTO subject (ID, Subject, NIM, Nilai, Dosen_pengajar)VALUES (2, 'Basis Data', 234567, 70, 'Ibu Ani');
 INSERT INTO subject (ID, Subject, NIM, Nilai, Dosen_pengajar)VALUES (3, 'Jaringan Komputer', 345678, 75, 'Pak Dodi');
